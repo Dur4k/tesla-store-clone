@@ -1,0 +1,133 @@
+.menu2 {
+  display: flex;
+  /* align-content: stretch; */
+  white-space: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 780px;
+  margin-bottom: 40px;
+}
+.menuLeft {
+  flex: 1;
+  padding: 0 10px;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  flex-wrap: wrap;
+}
+.menuMiddle {
+  border-right: 1px solid grey;
+  flex: 1;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+.menuRight {
+  border-right: 1px solid grey;
+  flex: 1;
+  padding: 0 10px;
+}
+.side {
+  flex: 1;
+  display: inline-block;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu2 a {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 30px;
+  color: white;
+}
+.menu2 p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: -8px;
+  color: white;
+}
+
+.side_side {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 25px;
+  margin: 30px;
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.side a {
+  font-size: 13px;
+}
+
+.text-side {
+  margin-top: 13%;
+  display: flex;
+  flex-direction: column;
+  font-size: 49px;
+  align-items: center;
+  color: #393c41;
+  flex: 1;
+}
+.black a,
+.black p,
+.black .button {
+  color: black !important;
+}
+.black .side > .button {
+  color: black !important;
+  border: solid black 3px;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu2 {
+    width: 450px;
+  }
+
+  .menuLeft {
+    flex: 1;
+    padding: 0 0px;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    flex-wrap: wrap;
+  }
+  .menuMiddle {
+    border-right: 1px solid grey;
+    flex: 1;
+    padding: 0 0px;
+    flex-wrap: wrap;
+  }
+  .menuRight {
+    border-right: 1px solid grey;
+    flex: 1;
+    padding: 0 0px;
+    margin: 0;
+  }
+  .side {
+    flex: 1;
+    /* display: inline-block; */
+    width: 100px !important;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 -20px 0;
+  }
+  .menu2 a {
+    font-size: 20px;
+  }
+
+  .side_side {
+    width: 400px;
+  }
+  svg {
+    width: 400px;
+  }
+}
