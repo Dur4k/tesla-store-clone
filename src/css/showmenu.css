@@ -73,6 +73,7 @@
   align-items: center;
   color: #393c41;
   flex: 1;
+  text-align: center;
 }
 .black a,
 .black p,
@@ -129,5 +130,11 @@
   }
   svg {
     width: 400px;
+  }
+  .solar .menuRight,
+  .solar .menuLeft,
+  .solar .menuMiddle {
+    border-right: none !important;
+    border: none !important;
   }
 }

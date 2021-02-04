@@ -3,7 +3,7 @@ import Route from "../router/router.js";
 import ButtonCyber from "../components/buttoncyber.js";
 import ShowMenu from "../components/showmenu.js";
 
-const Side = ({ name, desc, roundButton, text, pic, path, l, ls, m, ms, r, rs, black, f, svg }) => {
+const Side = ({ name, desc, roundButton, text, pic, path, l, ls, m, ms, r, rs, black, f, svg, solar }) => {
   return (
     <div>
       <Route path={path}>
@@ -13,7 +13,7 @@ const Side = ({ name, desc, roundButton, text, pic, path, l, ls, m, ms, r, rs, b
             <div className="text-side">
               <div className={f}>{name}</div>
             </div>
-            <div className="menu">
+            <div className={`menu ${solar} `}>
               <div className={`side_side ${black}`}>
                 <p>{desc}</p>
               </div>

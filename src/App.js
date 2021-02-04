@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Route path={"/S"}>
+      <Route path={"/"}>
         <div className="app_itemsContainer ">
           <Item
             title="Model S"

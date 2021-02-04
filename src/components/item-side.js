@@ -5,6 +5,13 @@ import roadster from "../assets1/roadster.jpg";
 import semi from "../assets1/semi.jpg";
 import MyComponent from "../font/cybersvg.js";
 import charging from "../assets1/charging";
+import model3 from "../assets2/model-3";
+import modelx from "../assets2/tesla-x";
+import modely from "../assets2/tesla-y";
+import roof from "../assets2/roof";
+import panels from "../assets/Desktop-SolarPanels.jpeg";
+import RoofSVG from "../font/roofsvg.js";
+import Sun from "../font/sun.js";
 
 const ItemSide = () => {
   return (
@@ -46,6 +53,80 @@ const ItemSide = () => {
         ms="Energy consumption"
         r="0.36"
         rs="Drag Ceoffiient"
+      />
+      <Side
+        name="Model 3"
+        pic={model3}
+        path="/3"
+        desc="​"
+        roundButton={true}
+        text="ORDER NOW"
+        l="3.1s"
+        ls="From 0-60 mph"
+        m="365mi "
+        ms="Range"
+        r="AWD"
+        rs="Dual Motor"
+      />
+      <Side
+        name="Model X"
+        pic={modelx}
+        path="/X"
+        desc="​"
+        roundButton={true}
+        text="ORDER NOW"
+        l="340 mi"
+        ls="Range (est.)"
+        m="2.5s "
+        ms="0-60 mph"
+        r="1,020hp"
+        rs="Peak power"
+      />
+      <Side
+        name="Model Y"
+        pic={modely}
+        path="/Y"
+        desc="​"
+        roundButton={true}
+        text="Reserve Now"
+        l="Use"
+        ls="at home"
+        m="Charge "
+        ms="Where youpark"
+        r="over"
+        rs="3000 stations"
+      />
+
+      <Side
+        name="Solar Roof"
+        pic={roof}
+        path="/roofs"
+        desc="​"
+        roundButton={true}
+        text="ORDER NOW"
+        l="Pays"
+        ls="off over time"
+        m="3X"
+        ms="Stronger than standard titles"
+        r={Sun()}
+        rs="Beautiful Solar Without Compromise"
+        solar="solar"
+        black="black"
+      />
+      <Side
+        name="Solar for Existing Roofs"
+        pic={panels}
+        path="/panels"
+        desc="​"
+        roundButton={true}
+        text="ORDER NOW"
+        l={RoofSVG()}
+        ls="Convert Sunlight into Energy"
+        m="£"
+        ms="Guaranteed Lowest Price "
+        r="24/7"
+        rs="Energy Monitoring"
+        solar="solar"
       />
       <Side
         name="Charging"

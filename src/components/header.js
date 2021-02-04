@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../css/header.css";
 import "../css/burgermenu.css";
-import Teslalogo from "../assets/teslaLogoSmall.svg";
+import Teslalogo from "../assets2/tesla-logo.svg";
 import Sidemenu from "../components/sidemenu.js";
 import Link from "../router/link.js";
+import $ from "jquery";
 
 const Header = () => {
+  function useOutsideAlerter(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          return $("#menuToggle input").prop("checked", false);
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
+  // $("#menuToggle input").prop("checked", true);
+  // $("#menuToggle input").prop("checked", false);
   return (
     <div>
       <div className="header">
         <div className="header_logo">
-          <img src={Teslalogo} />
+          <Link className="header-link" href="/">
+            <img style={{ filter: "invert(1)", width: "120px" }} src={Teslalogo} />
+          </Link>
         </div>
         <div className="header_center">
-          <Link className="header-link" href="/S">
+          <Link className="header-link" href="/">
             <p>Model S</p>
           </Link>
           <Link className="header-link" href="/3">
@@ -35,7 +56,7 @@ const Header = () => {
         <div className="header_right">
           <nav role="navigation">
             <div id="menuToggle">
-              <input type="checkbox" />
+              <input ref={wrapperRef} id="closeIcon" type="checkbox" />
 
               <span></span>
               <span></span>
