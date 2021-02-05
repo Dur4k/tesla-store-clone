@@ -8,6 +8,18 @@
   justify-content: center;
   scroll-snap-align: start;
 }
+@media only screen and (max-width: 500px) {
+  .item_button {
+    margin-bottom: 70px;
+  }
+
+  .menu p {
+    margin: 0 40px !important;
+  }
+  .item_container {
+    margin-top: -33px !important;
+  }
+}
 
 .item_container {
   width: 40vw;

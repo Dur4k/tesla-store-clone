@@ -63,7 +63,7 @@ const Header = () => {
               <span></span>
 
               <ul id="menu">
-                <Sidemenu h="/S" c="Sbar" namme="MODEL S" href="#" />
+                <Sidemenu h="/" c="Sbar" namme="MODEL S" href="#" />
                 <Sidemenu h="/3" c="Sbar" namme="MODEL 3" href="#" />
                 <Sidemenu h="/X" c="Sbar" namme="MODEL X" href="#" />
                 <Sidemenu h="/Y" c="Sbar" namme="MODEL Y" href="#" />

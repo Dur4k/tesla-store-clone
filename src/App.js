@@ -21,7 +21,7 @@ function App() {
           <Item
             title="Model S"
             desc="Order Online for Touchless Delivery"
-            descLink="/S"
+            descLink="/"
             backgroundImg={modelS}
             leftBotnTxt="COSTOM ORDER"
             leftBotnLink=""
