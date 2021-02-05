@@ -88,13 +88,13 @@ const ItemSide = () => {
         path="/Y"
         desc="​"
         roundButton={true}
-        text="Reserve Now"
-        l="Use"
-        ls="at home"
-        m="Charge "
-        ms="Where youpark"
-        r="over"
-        rs="3000 stations"
+        text="ORDER NOW"
+        l="68 cu ft"
+        ls="Cargo space"
+        m="326 mi "
+        ms="Range"
+        r="AWD"
+        rs="Dual motor"
       />
 
       <Side

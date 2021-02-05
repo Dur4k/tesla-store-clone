@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import "../css/header.css";
 import "../css/burgermenu.css";
 import Teslalogo from "../assets2/tesla-logo.svg";
@@ -30,7 +30,7 @@ const Header = () => {
       <div className="header">
         <div className="header_logo">
           <Link className="header-link" href="/">
-            <img style={{ filter: "invert(1)", width: "120px" }} src={Teslalogo} />
+            <img alt="pic" style={{ filter: "invert(1)", width: "120px" }} src={Teslalogo} />
           </Link>
         </div>
         <div className="header_center">

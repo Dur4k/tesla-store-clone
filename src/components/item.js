@@ -1,7 +1,5 @@
 import "../css/item.css";
 import Button from "../components/button.js";
-import Route from "../router/router.js";
-
 import React from "react";
 
 const Item = ({ title, desc, descLink, backgroundImg, leftBotnTxt, leftBotnLink, rightBtnText, rightBtnLink, twoButtons, first }) => {

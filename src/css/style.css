@@ -21,3 +21,9 @@ body {
   overflow-x: hidden;
   height: calc(100vh);
 }
+.content {
+  width: 100%;
+  max-width: 930px;
+}
+/* 49153 */
+/* 50037 */
